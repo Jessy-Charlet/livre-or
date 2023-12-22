@@ -1,0 +1,363 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #6c595e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #fecad9;
+    background-image: url(./media/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #ff7d7d;
+}
+h1 {
+    font-size: 3em;
+    font-weight: 100;
+    color: #6c595e;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.error {
+    display: block;
+    text-align: center;
+    background-color: #ff7d7d;
+    padding: 1em;
+    color: red;
+}
+
+.validation {
+    display: block;
+    text-align: center;
+    background-color: #a5ff7d;
+    padding: 1em;
+    color: green;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+/*--Header----------------------------------------------*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    box-shadow: 0 0 5px #6c595e;
+    position: sticky;
+    height: 50px;
+    z-index: 100;
+}
+
+header>nav img {
+    height: 50px;
+    margin: 0 0.5em 0 0;
+    border-radius: 100%;
+}
+
+header>nav>a img:hover {
+    background-color: #fed8e2;
+}
+
+header>nav {
+    display: block;
+    margin: 0 2em 0 0;
+    text-align: right;
+    padding: 0;
+}
+
+header>nav a {
+    height: 50px;
+    vertical-align: middle;
+    color: #6c595e;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+header>a {
+    display: block;
+    max-height: 50px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+header>a>img {
+    max-height: 50px;
+    margin-left: 2em;
+}
+
+
+/*--Commentaire--------------------------------------------*/
+.commentaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgb(108, 89, 94, 0.3);
+    padding: 1em;
+    margin: 1em;
+}
+.commentaireperso {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgb(108, 89, 94, 0.3);
+    padding: 1em;
+    margin: 1em;
+    border: 5px solid #ff7d7d;
+}
+
+.pseudo {
+    display: inline-block;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.pseudo span,
+.date span {
+    font-size: 1em;
+    font-weight: 600;
+
+}
+
+.date {
+    display: inline-block;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.message {
+    display: block;
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.message span {
+    font-weight: 900;
+    color: #afc4af;
+}
+
+
+
+
+/*--Section livreOr--------------------------------------------*/
+.livreOr {
+    width: 50%;
+    padding: 1em 7em 5em 7em;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 0 0 50px rgb(108, 89, 94, 0.3);
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+.livreOr > .info {
+    display: block;
+    width: 60%;
+    margin: 0 auto 3em auto;
+    font-weight: 600;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.livreOr>nav {
+    vertical-align: middle;
+    margin: 1em 0 3em 0
+}
+
+.bouton {
+    padding: 0.5em;
+    margin: 1em;
+    background-color: #6c595e;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    border: 0 solid #6c595e;
+    transition: all 200ms;
+}
+
+.bouton:hover {
+    background-color: white;
+    border: 3px solid #6c595e;
+    color: #6c595e;
+    padding: 0.5em 1em;
+    transition: all 200ms;
+}
+
+.trier {
+    display: block;
+    right: 6em;
+    margin-top: 1em;
+}
+
+.trier > select {
+    padding: 0.5em;
+    border-radius: 5px;
+    color: #6c595e;
+    border: 3px solid #6c595e;
+}
+.trier > select > option {
+    padding: 0.5em 0.5em 0.5em 1em;
+    background-image: url(./media/icon-tri-az.png);
+}
+.livreOr form{
+    text-align: center;
+}
+.livreOr input{
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    margin:0.5em auto;
+    border: 2px solid #6c595e;
+    border-radius: 10px;
+}
+.livreOr .button{
+    padding: 0.5em;
+    color: white;
+    background-color: #6c595e;
+    border: 2px solid #6c595e;
+    border-radius: 10px;
+    transition: all 200ms;
+}
+.livreOr .button:hover{
+    color: #6c595e;
+    background-color: white;
+    padding: 0.5em 1em;
+    transition: all 200ms;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    padding: 0.5em;
+    margin:0.5em auto;
+    border: 2px solid #6c595e;
+    border-radius: 10px;
+
+}
+
+/*--Modif-profil----------------------------------------------*/
+.modif {
+    padding: 1em;
+    background-color: #6c595e;
+    border-radius: 15px;
+    border: 2px solid #6c595e;
+    color: white;
+    font-weight: 600;
+    width: 60%;
+    min-width: 450px;
+    margin: auto;
+    transition-property: all;
+    transition-duration: 500ms;
+
+}
+.modif:hover {
+    background-color: white;
+    color: #6c595e;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.modif_int{
+    height: 1px;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.modif:hover > .modif_int{
+    height: 150px;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.modif > .modif_int > form{
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    width: 60%;
+    min-width: 400px;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    align-items: center;
+    align-content: center;
+
+}
+.modif > .modif_int > form input{
+    width: 100%;
+    margin: 0 1em 0 1em;
+    padding: 0.3em;
+}
+.modif > .modif_int > form:last-child input:first-child{
+ border-radius: 10px 10px 0 0;
+ border-bottom: none;
+}
+.modif > .modif_int > form:last-child input:last-child{
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid grey;
+   }
+.modif > .modif_int > form button{
+    width: 100%;
+    margin: 0 1em 0 1em;
+    background-color: #6c595e;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-weight: 600;
+}
+.modif > .modif_int > form button:hover{
+    background-color: #ff7d7d;
+}
+.modif > .modif_int > form label{
+    width: 100%;
+    text-align: right;
+}
+.modif > .modif_int > form button{
+    width: 100%;
+    height: 100%;
+}
+.deconnexion{
+    padding: 0.7em;
+    font-size: 1.2em;
+    margin: 1.5em auto;
+    background-color: #ff7d7d;
+    border: 2px solid rgb(150,100,100);
+    border-radius: 10px;
+    color: white;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+.deconnexion:hover{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    font-size: 1.4em;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+
+/*--Footer----------------------------------------------*/
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 2em;
+    border-radius: 15px 0 0 0;
+    background-color: white;
+    z-index: 99;
+
+}
